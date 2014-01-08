@@ -1,1 +1,1 @@
-# School Assignment - Dormitory Management
+# School Assignment - Dormitory Management## How to Compile### Execute build.sh# How to Run### Execute run.sh
