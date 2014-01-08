@@ -9,10 +9,11 @@ enum Identifier {
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 #include "Student.h"
 #include "Utility.h"
-#include "LinkedList.h"
+#include "ArrayList.h"
 
 
 #endif

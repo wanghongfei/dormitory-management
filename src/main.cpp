@@ -10,11 +10,28 @@ using namespace std;
  * Last modify: 1/8/2014
  * Language: C++
  */
+
+ostream & operator<<(ostream & os, Student & stu) {
+	os << "Id\tName\tRoomId\t" << endl;
+	os << stu.getId() << "\t"
+		<< stu.getName() << "\t"
+		<< stu.getRoomId() << "\t"
+		<< endl;
+
+	return os;
+}
+
 int main() {
-	Student st("bruce", "001", "129");
 	Utility util;
-	LinkedList list;
-	cout << "hello world" << endl;
+	ArrayList list(50);
+
+	Student st("bruce", "001", "129");
+	Student st2("Neo", "001", "128");
+
+	list.append(st);
+	list.append(st2);
+
+	cout << list << endl;
 
 	return 0;
 }

@@ -9,6 +9,7 @@ class Student {
 	public:
 		// constructor
 		Student(const string & name, const string & id, const string & roomId) : name(name), id(id), roomId(roomId) {}
+		Student() {}
 
 		// getters and setters
 		string getName() {
@@ -40,6 +41,15 @@ class Student {
 		string id;
 		string roomId;
 };
+
+//ostream & operator<<(ostream & os, Student & stu) {
+//	os << "\t" << stu.getId()
+//		<< "\t" << stu.getName()
+//		<< "\t" << stu.getRoomId()
+//		<< endl;
+//
+//	return os;
+//}
 
 
 #endif
