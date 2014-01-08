@@ -1,1 +1,1 @@
-# School Assignment - Dormitory Management## How to Compile* Execute build.sh## How to Run* Execute run.sh
+# School Assignment - Dormitory Management## How to Compile* Dependency: g++ Compiler.* Execute build.sh## How to Run* Execute run.sh
