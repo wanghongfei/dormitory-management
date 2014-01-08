@@ -26,16 +26,17 @@ Utility util;
 int main() {
 	ArrayList list(50);
 
-	Student st("bruce", "001", "129");
-	Student st2("Neo", "001", "128");
-
 	//list.append(st);
 	//list.append(st2);
 
 	//cout << list << endl;
 
 	util.readDataFromFile("data.dat", list);
+	list.quickSort(0, list.getAmount() - 1, ID);
 	cout << list << endl;
+
+	cout << list.queryById("00") << endl;;
+	cout << list.queryByName("Neo") << endl;
 
 	return 0;
 }
