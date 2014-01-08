@@ -21,16 +21,20 @@ ostream & operator<<(ostream & os, Student & stu) {
 	return os;
 }
 
+Utility util;
+
 int main() {
-	Utility util;
 	ArrayList list(50);
 
 	Student st("bruce", "001", "129");
 	Student st2("Neo", "001", "128");
 
-	list.append(st);
-	list.append(st2);
+	//list.append(st);
+	//list.append(st2);
 
+	//cout << list << endl;
+
+	util.readDataFromFile("data.dat", list);
 	cout << list << endl;
 
 	return 0;

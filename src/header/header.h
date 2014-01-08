@@ -8,12 +8,13 @@ enum Identifier {
 };
 
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <cstdlib>
 
 #include "Student.h"
-#include "Utility.h"
 #include "ArrayList.h"
+#include "Utility.h"
 
 
 #endif

@@ -7,6 +7,7 @@ using namespace std;
 class Utility {
 	public:
 		void sort();
+		void readDataFromFile(const string & fileName, ArrayList & list);
 };
 
 #endif
