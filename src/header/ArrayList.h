@@ -27,6 +27,10 @@ class ArrayList {
 			return this->amount;
 		}
 
+		Student* getElements() {
+			return this->data;
+		}
+
 	private:
 		Student *data;
 		int amount; // node amount

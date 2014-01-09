@@ -11,6 +11,7 @@ enum Identifier {
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include <cstdio>
 
 #include "Student.h"
 #include "ArrayList.h"

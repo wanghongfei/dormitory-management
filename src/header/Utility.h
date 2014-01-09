@@ -6,10 +6,16 @@ using namespace std;
 
 class Utility {
 	public:
-		void sort();
+		int exec();
+
+	private:
+		void showMenu();
+		void pause();
 		void readDataFromFile(const string & fileName, ArrayList & list);
 
 	private:
+		//ArrayList list(100); // ERROR
+		ArrayList list;
 };
 
 #endif
