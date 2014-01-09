@@ -45,7 +45,6 @@ class ArrayList {
 			return this->amount == 0;
 		}
 
-	public:
 		// quick sort
 		int portion(int ixLow, int ixHigh, Identifier keyword);
 		void quickSort(int ixLow, int ixHigh, Identifier keyword);

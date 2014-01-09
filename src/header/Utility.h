@@ -12,6 +12,7 @@ class Utility {
 		void showMenu();
 		void pause();
 		void readDataFromFile(const string & fileName, ArrayList & list);
+		void printTableHeader();
 
 		void queryById();
 		void queryByName();

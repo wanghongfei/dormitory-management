@@ -41,30 +41,33 @@ ostream & operator<<(ostream & os, ArrayList & list) {
 
 // query method
 int ArrayList::queryById(const string & id) {
+	quickSort(0, this->amount - 1, ID);
 	return binSearch(0, this->amount - 1, id, ID);
 }
 int ArrayList::queryByName(const string & name) {
+	quickSort(0, this->amount - 1, NAME);
 	return binSearch(0, this->amount - 1, name, NAME);
 }
 int ArrayList::queryByRoomId(const string & roomId) {
-	return binSearch(0, this->amount - 1, roomId, NAME);
+	quickSort(0, this->amount - 1, ROOMID);
+	return binSearch(0, this->amount - 1, roomId, ROOMID);
 }
 
 
 // binary search
 int ArrayList::binSearch(int left, int right, const string & identity, Identifier keyword) {
-	int mid = (left + right) / 2;
-	int res = -1;
-
-	if(left < right) {
+	int res = -1; // -1 stands for searching failed.
+	while(left <= right) {
+		int mid = (left + right) / 2;
 		string key = fetchKeyword(this->data[mid], keyword);
 
 		if(identity < key) {
-			res = binSearch(left, mid - 1, identity, keyword);
+			right = mid - 1;
 		} else if(identity > key) {
-			res = binSearch(mid + 1, right, identity, keyword);
+			left = mid + 1;
 		} else {
-			res = mid;
+			res = mid; // Element found
+			break;
 		}
 	}
 
