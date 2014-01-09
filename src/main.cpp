@@ -12,8 +12,8 @@ using namespace std;
  * Language: C++
  */
 
-Utility util;
+App theApp;
 
 int main() {
-	return util.exec();
+	return theApp.exec();
 }

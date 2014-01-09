@@ -4,7 +4,7 @@
 #include "header.h"
 using namespace std;
 
-class Utility {
+class App {
 	public:
 		int exec();
 

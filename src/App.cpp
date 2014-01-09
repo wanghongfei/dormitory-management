@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void Utility::readDataFromFile(const string & fileName, ArrayList & list) {
+void App::readDataFromFile(const string & fileName, ArrayList & list) {
 	cout << "[INFO] Reading data from file [" << fileName << "]" << endl;
 
 	// open file
@@ -37,7 +37,7 @@ void Utility::readDataFromFile(const string & fileName, ArrayList & list) {
 	cout << "[INFO] Done" << endl;
 }
 
-void Utility::queryById() {
+void App::queryById() {
 	string id;
 	int ix = -1;
 	Student *pTempStu;
@@ -58,7 +58,7 @@ void Utility::queryById() {
 	}
 }
 
-void Utility::queryByName() {
+void App::queryByName() {
 	string name;
 	int ix = -1;
 	Student *pTempStu;
@@ -79,7 +79,7 @@ void Utility::queryByName() {
 	}
 }
 
-void Utility::queryByRoomId() {
+void App::queryByRoomId() {
 	string roomId;
 	int ix = -1;
 	Student *pTempStu;
@@ -100,17 +100,17 @@ void Utility::queryByRoomId() {
 	}
 }
 
-void Utility::printTableHeader() {
+void App::printTableHeader() {
 	cout << "\tId\tName\tRoomId" << endl;
 }
 
-void Utility::pause() {
+void App::pause() {
 	//cout << "Press any key to continue..." << endl;
 	getchar();
 	getchar();
 }
 
-void Utility::showMenu() {
+void App::showMenu() {
 	cout << "\t------------------" << endl;
 	cout << "\t1. 按学号查询" << endl;
 	cout << "\t2. 按姓名查询" << endl;
@@ -122,7 +122,7 @@ void Utility::showMenu() {
 
 // Main lifecycle method
 // Call this method to start program
-int Utility::exec() {
+int App::exec() {
 	readDataFromFile("data.dat", list);
 
 	char choose = 0;

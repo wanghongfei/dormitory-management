@@ -33,8 +33,8 @@ echo "start building..."
 echo -e "\n****************** compiling phase ***********************\n"
 cd $SRC_DIR # change working directory
 
-echo ">>> g++ -c Utility.cpp -o ${OBJ_DIR}Utility.o"
-g++ -c Utility.cpp -o ${OBJ_DIR}Utility.o
+echo ">>> g++ -c App.cpp -o ${OBJ_DIR}App.o"
+g++ -c App.cpp -o ${OBJ_DIR}App.o
 check
 echo ">>> g++ -c ArrayList.cpp -o ${OBJ_DIR}ArrayList.o"
 g++ -c ArrayList.cpp -o ${OBJ_DIR}ArrayList.o
@@ -52,7 +52,7 @@ cd $CUR_PATH # exit working directory
 echo -e "\n******************* linking phase *************************\n"
 cd $OBJ_DIR
 
-echo ">>> g++ main.o ArrayList.o Utility.o Student.o -o ${RELEASE_DIR}program.out"
-g++ main.o ArrayList.o Utility.o Student.o -o ${RELEASE_DIR}program.out
+echo ">>> g++ main.o ArrayList.o App.o Student.o -o ${RELEASE_DIR}program.out"
+g++ main.o ArrayList.o App.o Student.o -o ${RELEASE_DIR}program.out
 
 check

@@ -1,6 +1,8 @@
 #ifndef HEADER_H_H
 #define HEADER_H_H
 
+// This file should be included in every file.
+
 enum Identifier {
 	ID,
 	ROOMID,
@@ -15,7 +17,7 @@ enum Identifier {
 
 #include "Student.h"
 #include "ArrayList.h"
-#include "Utility.h"
+#include "App.h"
 
 
 #endif
