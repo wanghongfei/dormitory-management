@@ -11,6 +11,8 @@ class Student {
 		Student(const string & name, const string & id, const string & roomId) : name(name), id(id), roomId(roomId) {}
 		Student() {}
 
+		friend ostream & operator<<(ostream & os, Student & stu);
+
 		// getters and setters
 		string getName() {
 			return this->name;
@@ -42,14 +44,6 @@ class Student {
 		string roomId;
 };
 
-//ostream & operator<<(ostream & os, Student & stu) {
-//	os << "\t" << stu.getId()
-//		<< "\t" << stu.getName()
-//		<< "\t" << stu.getRoomId()
-//		<< endl;
-//
-//	return os;
-//}
 
 
 #endif

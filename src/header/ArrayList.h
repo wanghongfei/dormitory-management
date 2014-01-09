@@ -1,5 +1,5 @@
-#ifndef LINKEDLIST_H_H
-#define LINKEDLIST_H_H
+#ifndef ARRAYLIST_H_H
+#define ARRAYLIST_H_H
 
 #include "header.h"
 

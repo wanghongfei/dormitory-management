@@ -37,6 +37,33 @@ void Utility::readDataFromFile(const string & fileName, ArrayList & list) {
 	cout << "[INFO] Done" << endl;
 }
 
+void Utility::queryById() {
+	string id;
+	int ix = -1;
+	Student *pTempStu;
+
+	while(true) {
+		cout << "请输入学号>";
+		cin >> id;
+		ix = list.queryById(id);
+
+		if(-1 != ix) {
+			pTempStu = &((list.getElements())[ix]);
+			cout << "\tId\tName\tRoomId" << endl;
+			cout << *pTempStu << endl;
+			break;
+		}
+
+		cout << "该学号不存在" << endl;
+	}
+}
+
+void queryByName() {
+}
+
+void queryByRoomId() {
+}
+
 void Utility::pause() {
 	cout << "Press any key to continue..." << endl;
 	getchar();
@@ -60,22 +87,23 @@ int Utility::exec() {
 		cin >> choose;
 
 		switch(choose) {
-			case '1':
+			case '1': // ID
+				queryById();
 				pause();
 				break;
 
-			case '2':
-				cout << "2" << endl;
+			case '2': // Name
+				//queryByName();
 				pause();
 				break;
 
-			case '3':
-				cout << "3" << endl;
+			case '3': // RoomId
+			  	//queryByRoomId();
 				pause();
 				break;
 
 			case '4':
-				cout << "4" << endl;
+				return 0;
 				pause();
 				break;
 

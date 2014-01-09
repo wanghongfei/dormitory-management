@@ -39,6 +39,9 @@ check
 echo ">>> g++ -c ArrayList.cpp -o ${OBJ_DIR}ArrayList.o"
 g++ -c ArrayList.cpp -o ${OBJ_DIR}ArrayList.o
 check
+echo ">>> g++ -c Student.cpp -o ${OBJ_DIR}Student.o"
+g++ -c Student.cpp -o ${OBJ_DIR}Student.o
+check
 echo ">>> g++ -c main.cpp -o ${OBJ_DIR}main.o"
 g++ -c main.cpp -o ${OBJ_DIR}main.o
 check
@@ -49,7 +52,7 @@ cd $CUR_PATH # exit working directory
 echo -e "\n******************* linking phase *************************\n"
 cd $OBJ_DIR
 
-echo ">>> g++ main.o ArrayList.o Utility.o -o ${RELEASE_DIR}program.out"
-g++ main.o ArrayList.o Utility.o -o ${RELEASE_DIR}program.out
+echo ">>> g++ main.o ArrayList.o Utility.o Student.o -o ${RELEASE_DIR}program.out"
+g++ main.o ArrayList.o Utility.o Student.o -o ${RELEASE_DIR}program.out
 
 check

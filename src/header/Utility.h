@@ -13,6 +13,10 @@ class Utility {
 		void pause();
 		void readDataFromFile(const string & fileName, ArrayList & list);
 
+		void queryById();
+		void queryByName();
+		void queryByRoomId();
+
 	private:
 		//ArrayList list(100); // ERROR
 		ArrayList list;
