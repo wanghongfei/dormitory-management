@@ -11,6 +11,9 @@
 *.lai
 *.la
 *.a
+<<<<<<< HEAD
 
 # Executable File
 *.out
+=======
+>>>>>>> 8f592d62ef0a54da0bcdcff733ca6018d6fb2ded
