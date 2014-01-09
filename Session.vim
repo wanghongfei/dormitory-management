@@ -98,7 +98,7 @@ endif
 set shortmess=aoO
 badd +71 Session.vim
 badd +52 build.sh
-badd +5 src/main.cpp
+badd +42 src/main.cpp
 badd +4 run.sh
 badd +16 src/header/header.h
 badd +45 src/header/Student.h
@@ -107,8 +107,8 @@ badd +13 src/header/Utility.h
 badd +1 src/header/LinkedList.h
 badd +38 src/Utility.cpp
 badd +1 src/LinkedList.cpp
-badd +24 src/header/ArrayList.h
-badd +49 src/ArrayList.cpp
+badd +7 src/header/ArrayList.h
+badd +1 src/ArrayList.cpp
 badd +7 data.dat
 badd +5 bin/release/data.dat
 args build.sh
@@ -918,11 +918,11 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 17) / 34)
+let s:l = 130 - ((33 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+130
 normal! 0
 tabnext 7
 if exists('s:wipebuf')
