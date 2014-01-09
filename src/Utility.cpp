@@ -121,6 +121,7 @@ void Utility::showMenu() {
 }
 
 // Main lifecycle method
+// Call this method to start program
 int Utility::exec() {
 	readDataFromFile("data.dat", list);
 
